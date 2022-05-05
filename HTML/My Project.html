@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personle Portfolio Website</title>
+    <link rel="stylesheet" href="../CSS/My Project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="Homepage.html"><img src="../images/logo1.png" class="logo" id="logodark"></a>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="My Project.html">MY PROJECTS</a></li>
+            </ul>
+            <img src="../images/moon.png" id="icon">
+        </nav>
+        <div class="container">
+            <div class="card">
+                <img src="../images/html.png" class="icon">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>HTML Project</h3>
+                    <p>Doing The Web Project for University Helpdesk Using HTML,CSS & Javascript Technology</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/java.png" class="icon">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Java Project</h3>
+                    <p>Doing The Web Project for Online Grocery Store Using Java & Tomcat Server Technology</p>
+                    <a href="https://github.com/YashmikaAnusara/Shopping-Website">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/android.png" class="icon">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Mobile Project</h3>
+                    <p>Doing The Moblie App Project for Vehicle Service and Spare Parts Management System Using Java, 
+                        SQL Lite Database & Android Studio Technology</p>
+                    <a href="https://github.com/YashmikaAnusara/AutoCare-Vehicle-Moblie-App">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/react.png" class="icon">
+                <div class="content">
+                    <h2>04</h2>
+                    <h3>React Project</h3>
+                    <p>Doing The Web Project for Class Management System Using Mern Stack Technology</p>
+                    <a href="https://github.com/YashmikaAnusara/Institute-Management-System">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/unity.png" class="icon">
+                <div class="content">
+                    <h2>05</h2>
+                    <h3>Game Terrain</h3>
+                    <p>Design The Game Terrain Project For Using C# & Unity Technology</p>
+                    <a href="https://github.com/YashmikaAnusara/Game-Terrain">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/react.png" class="icon">
+                <div class="content">
+                    <h2>06</h2>
+                    <h3>React Project</h3>
+                    <p>Doing The Web Project for Auto Care Vehicle Management System Using Mern Stack Technology</p>
+                    <a href="https://github.com/YashmikaAnusara/Auto-Care-Web-Application">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/java.png" class="icon">
+                <div class="content">
+                    <h2>07</h2>
+                    <h3>Java Project</h3>
+                    <p>Doing The Backend for Electro Grid Company Using intellij Java Technology</p>
+                    <a href="https://github.com/YashmikaAnusara/PAF-Project-ElectroGrid">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="images">
+            <img src="../images/shape.png" class="shape">
+            <img src="../images/my photo.png" class="girl">
+        </div>
+    </div>
+    <script>
+        var icon =document.getElementById("icon");
+        var logodark =document.getElementById("logodark");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "../images/sun.png";
+                logodark.src = "../images/logo2.png";
+            }else{
+                icon.src = "../images/moon.png";
+                logodark.src = "../images/logo1.png";
+            }
+        }
+    </script>
+</body>
+</html>
